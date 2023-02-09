@@ -9,41 +9,57 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="script.js"></script>
     <style>
-        li{
-            color: red;
+       .fruits-container li {
+            color: darkorange;
         }
+        #fruits-title {
+            color: green;
+        } 
+        .place {
+            color: blue!important;
+        }  
     </style>
 </head>
+
 <body>
     <header>
         <h1>Learning the DOM</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dicta quod laboriosam error, iure quas ullam soluta amet eius atque dolorem? Aperiam quidem aspernatur voluptatem sit omnis, eum suscipit earum!</p>
     </header>
     <main>
-        <h1>My Awesome DOM</h1>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Email Us</li>
-        </ul>
+        <section>
+            <h1>My Awesome DOM</h1>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Email Us</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits I Like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+                <li>Strawberry</li>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1 id="places-title">Place I like to visit</h1>
+            <ul>
+                <li class="place">London</li>
+                <li class="place">Paris</li>
+                <li class="place">Amsterdam</li>
+                <li class="place">Barcelona</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        // const studnet = {
-        //     name: 'John',
-        //     age: 20,
-        //     study: function(time){
-        //         console.log(time, 'Studying');
-        //     }
-        // };
-        // console.log('Adding a new element');
+    
 
-        const liCollections = document.getElementsByTagName('li');
-        //console.log(liCollections);
-        for (const li of liCollections) {
-            li.style.color = 'green';
-            console.log(li);
-        }
     </script>
+    <script src="js/styleInJs.js"></script>
 </body>
+
 </html>
